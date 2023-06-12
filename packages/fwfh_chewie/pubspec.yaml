@@ -20,7 +20,7 @@ dependency_overrides:
   flutter_widget_from_html_core:
     git: 
       url: https://github.com/sasen98/flutter_widget_from_html/
-      path: packages/flutter_widget_from_html
+      path: packages/flutter_widget_from_html_core
   fwfh_text_style:
      git: 
       url: https://github.com/sasen98/flutter_widget_from_html/
