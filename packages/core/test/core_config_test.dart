@@ -3,8 +3,11 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
-import 'package:flutter_widget_from_html_core/src/internal/tsh_widget.dart';
+import 'package:flutter_widget_from_html/src/core_data.dart';
+import 'package:flutter_widget_from_html/src/core_helpers.dart';
+import 'package:flutter_widget_from_html/src/core_html_widget.dart';
+import 'package:flutter_widget_from_html/src/core_widget_factory.dart';
+import 'package:flutter_widget_from_html/src/internal/tsh_widget.dart';
 import 'package:html/dom.dart' as dom;
 import 'package:mocktail_image_network/mocktail_image_network.dart';
 
@@ -314,7 +317,7 @@ void main() {
             hw: HtmlWidget(
               'Foo <span class="throw">bar</span>.',
               buildAsync: buildAsync,
-              factoryBuilder: () => _OnErrorBuilderFactory(),
+              factoryBuilder: () => WidgetFactory(),
               key: helper.hwKey,
               onErrorBuilder: onErrorBuilder,
             ),

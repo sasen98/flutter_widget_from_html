@@ -3,7 +3,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
+import 'package:flutter_widget_from_html/src/core_html_widget.dart';
+import 'package:flutter_widget_from_html/src/core_widget_factory.dart';
 import 'package:golden_toolkit/golden_toolkit.dart';
 import 'package:mocktail_image_network/mocktail_image_network.dart';
 
