@@ -509,7 +509,7 @@ void main() {
       String? html,
       GlobalKey? key,
     }) {
-      key ??= helper.hwKey;
+      key ??= helper.hwKey as GlobalKey<State<StatefulWidget>>?;
       final hw = HtmlWidget(
         html ?? '<p>Foo</p><p>Bar</p>',
         buildAsync: buildAsync,

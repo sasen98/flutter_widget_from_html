@@ -38,7 +38,7 @@ Future<String> explain(
   GlobalKey? key,
   bool useExplainer = true,
 }) async {
-  key ??= helper.hwKey;
+  key ??= helper.hwKey as GlobalKey<State<StatefulWidget>>?;
   return helper.explain(
     tester,
     null,
